@@ -394,3 +394,9 @@ footer {
     width: 41px;
   }
 }
+
+@media (orientation: landscape) and (max-width: 992px) {
+  header {
+    height: 100vh;
+  }
+}
