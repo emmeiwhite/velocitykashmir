@@ -1,0 +1,410 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Utilities */
+html {
+  font-family: sans-serif;
+  font-size: 16px;
+  color: #666;
+  scroll-behavior: smooth;
+}
+ul {
+  list-style: none;
+}
+
+li {
+  color: #fff;
+}
+
+h2 {
+  text-align: center;
+  color: #193272;
+  text-transform: capitalize;
+  font-weight: 500;
+  margin: 2rem 0;
+  text-transform: uppercase;
+}
+
+.section {
+  padding: 3rem 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.section p {
+  line-height: 1.4;
+}
+
+main section {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+/* Header Section */
+.logo-img {
+  width: 4rem;
+}
+
+header {
+  background-image: linear-gradient(
+      to right,
+      rgba(25, 50, 114, 0),
+      rgb(28, 52, 116, 0)
+    ),
+    url("./img/best-kashmir-road.jpeg");
+  background-position: center bottom;
+  background-size: cover;
+  height: 60vh;
+  background-repeat: no-repeat;
+}
+
+.main-heading {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-shadow: 0px 3px 7px #193272;
+  position: relative;
+}
+
+.main-heading--text {
+  text-align: center;
+  margin-top: -182px;
+}
+
+.main-heading--text h1 {
+  font-size: 2.5rem;
+  font-weight: 900;
+}
+
+.main-heading--text p {
+  text-transform: capitalize;
+  font-size: 1.625rem;
+  font-weight: 500;
+  margin-top: 0.6rem;
+}
+
+.contact-email {
+  position: absolute;
+  bottom: 6rem;
+  right: 0rem;
+  background-color: #193272;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem 0 0 1rem;
+  font-weight: 300;
+  letter-spacing: 1.5px;
+  text-shadow: none;
+}
+
+.navbar {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.logo-wrapper h4 {
+  background-color: #193272;
+  padding: 0.5rem 1rem;
+  font-weight: 500;
+  color: #5bb230;
+  letter-spacing: 2px;
+  border-radius: 1rem;
+  font-weight: 600;
+}
+
+.phone {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+  align-items: center;
+  justify-items: end;
+}
+
+.phone h4 {
+  text-align: center;
+  font-weight: 400;
+  letter-spacing: 3px;
+  color: #fff;
+  background-color: #193272;
+  padding: 0.3rem 1rem;
+  border-radius: 1rem;
+}
+
+.phone li {
+  text-shadow: 2px 3px 5px #193272;
+}
+/* Main Section */
+.about-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 3rem;
+}
+
+.about-text {
+  text-align: justify;
+}
+
+.about-text .site-name {
+  color: #5bb230;
+  font-weight: 600;
+}
+
+/* Packages */
+.packages-wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2.5rem;
+}
+
+.package-img-wrapper {
+  width: 100%;
+  height: 200px;
+}
+
+.package-img-wrapper img {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+
+.packages-text {
+  line-height: 1.5;
+}
+
+.packages-text h4 {
+  margin-top: 1rem;
+  margin-bottom: 0.25rem;
+  color: #193272;
+}
+/* Contact Us */
+.contact-title {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.contact-social {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+.contact-subtitle {
+  margin-top: -1.5rem;
+  margin-bottom: 2rem;
+  font-size: 1.25rem;
+  text-transform: capitalize;
+  font-weight: 300;
+}
+
+.contact-tile {
+  text-align: center;
+  box-shadow: 0px 2px 10px #193272;
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+.contact-tile h4 {
+  color: #193272;
+  font-weight: 600;
+  text-transform: capitalize;
+  margin-bottom: 0.5rem;
+}
+.contact-tile li {
+  line-height: 2;
+  color: #666;
+}
+
+.contact-tile img {
+  height: 20px;
+  width: auto;
+  margin-right: 0.25rem;
+}
+
+.contact-icon-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact-tile li a {
+  color: #5bb230;
+  transform: all 0.5s ease-in;
+}
+
+.contact-tile li a:hover {
+  color: #193272;
+}
+/* Footer */
+footer {
+  background-color: #193272;
+  color: #fff;
+}
+
+.footer-text {
+  display: flex;
+  justify-content: space-between;
+}
+
+.back-to--top {
+  height: 30px;
+  width: 30px;
+  position: fixed;
+  border-radius: 100%;
+  bottom: 1rem;
+  right: 0.125rem;
+  cursor: pointer;
+}
+
+/* ======= RESPONSIVE DESIGN ====== */
+
+/* Desktop Screen */
+@media (max-width: 1200px) {
+  .contact-social {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+/* Tablet screen */
+@media (max-width: 992px) {
+  .packages-wrapper {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .navbar {
+    flex-direction: column;
+  }
+
+  .contact-email {
+    bottom: 10rem;
+  }
+
+  .main-heading--text {
+    margin-top: -224px;
+  }
+  .main-heading--text h1 {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+
+  .main-heading--text p {
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+  .phone li {
+    text-shadow: none;
+    background-color: #193272;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.5rem;
+  }
+}
+
+/* Mobile Screen */
+@media (max-width: 768px) {
+  header {
+    height: 50vh;
+  }
+
+  .navbar {
+    font-size: 0.875rem;
+  }
+  .main-heading--text h1 {
+    font-size: 1.75rem;
+    font-weight: 700;
+  }
+
+  .main-heading--text p {
+    font-size: 1.25rem;
+    font-weight: 500;
+  }
+  main section {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  .packages-wrapper,
+  .contact-social {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .contact-social {
+    gap: 2rem;
+  }
+
+  .footer-text {
+    font-size: 0.875rem;
+    flex-direction: column;
+  }
+  .registration {
+    margin-bottom: 0.75rem;
+  }
+}
+
+/* Small Mobile Screen*/
+@media (max-width: 520px) {
+  header {
+    height: 45vh;
+  }
+
+  .logo-wrapper {
+    margin-bottom: 1rem;
+  }
+  .logo-wrapper img {
+    background-color: #193272;
+    height: 30px;
+    width: 30px;
+  }
+  .main-heading--text h1 {
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+
+  .main-heading--text p {
+    font-size: 1rem;
+    font-weight: 300;
+  }
+  .about-wrapper,
+  .packages-wrapper,
+  .contact-social {
+    grid-template-columns: 1fr;
+  }
+
+  .logo-wrapper h4 {
+    text-align: center;
+    border-radius: 0;
+  }
+  .navbar {
+    font-size: 0.7rem;
+  }
+
+  .phone h4 {
+    justify-self: start;
+  }
+  .phone h4,
+  .phone li {
+    letter-spacing: 1px;
+    border-radius: 0;
+  }
+  .contact-email {
+    border-radius: 0;
+    padding: 0.25rem 0.5rem;
+  }
+}
+
+/* Smallest Mobile Screen */
+
+@media (max-width: 420px) {
+  header {
+    height: 40vh;
+  }
+
+  .logo-wrapper img {
+    height: 44px;
+    width: 44px;
+  }
+}
