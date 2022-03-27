@@ -206,24 +206,29 @@ header {
 
 .contact-tile {
   text-align: center;
-  box-shadow: 1px 2px 2px rgb(221, 205, 205);
+  box-shadow: 1px 3px 5px rgb(206, 192, 192);
   padding: 1rem;
   background-image: linear-gradient(
-    to right,
-    rgba(222, 236, 215, 0.507),
-    rgba(164, 207, 143, 0.719),
-    rgba(179, 194, 172, 0.924)
-  );
+      to right,
+      rgba(25, 50, 114, 0.3),
+      rgba(20, 43, 104, 0.4)
+    ),
+    url("./img/grass-4.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
+
 .contact-tile h4 {
   color: #193272;
-  font-weight: 600;
+  font-weight: 900;
   text-transform: capitalize;
   margin-bottom: 0.5rem;
 }
 .contact-tile li {
   line-height: 2;
-  color: #666;
+  color: #fff;
+  font-weight: 500;
 }
 
 .contact-tile img {
@@ -239,7 +244,7 @@ header {
 }
 .contact-tile li a {
   transform: all 0.5s ease-in;
-  color: #555;
+  color: #fff;
 }
 
 .contact-tile li a:hover {
