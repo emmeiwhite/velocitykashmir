@@ -267,7 +267,7 @@ footer {
   width: 30px;
   position: fixed;
   border-radius: 100%;
-  bottom: 10vh;
+  bottom: 8rem;
   right: 0.125rem;
   cursor: pointer;
 }
