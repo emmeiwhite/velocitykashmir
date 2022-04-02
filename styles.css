@@ -254,6 +254,7 @@ header {
 footer {
   background-color: #193272;
   color: #fff;
+  margin-bottom: -8.215rem;
 }
 
 .footer-text {
@@ -262,11 +263,11 @@ footer {
 }
 
 .back-to--top {
-  height: 30px;
+  height: 20px;
   width: 30px;
   position: fixed;
   border-radius: 100%;
-  bottom: 1rem;
+  bottom: 10vh;
   right: 0.125rem;
   cursor: pointer;
 }
@@ -404,4 +405,9 @@ footer {
   header {
     height: 100vh;
   }
+}
+
+/* WhatsApp Chat  */
+a[title="WhatsApp"] + div {
+  display: none !important;
 }
