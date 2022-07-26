@@ -39,6 +39,9 @@ h2 {
   line-height: 1.4;
 }
 
+main {
+  background-color: #f9f9f9;
+}
 main section {
   padding-top: 2rem;
   padding-bottom: 2rem;
@@ -214,18 +217,14 @@ header {
 
 .contact-tile {
   text-align: center;
-  padding: 4rem 2rem;
-  background-image: linear-gradient(to right, #abc0f3, rgba(5, 60, 211, 0.4));
-
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  padding: 7rem 1rem;
+  background: #fff;
   transition: background-color 0.5s ease-in;
 }
 
 .contact-tile:hover {
   cursor: pointer;
-  background-color: #16d252;
+  background-color: #ddd;
 }
 
 .contact-tile h4 {
@@ -236,8 +235,8 @@ header {
 }
 .contact-tile li {
   line-height: 2;
-  color: #fff;
   font-weight: 500;
+  color: #444;
 }
 
 .contact-tile img {
@@ -252,12 +251,12 @@ header {
   align-items: center;
 }
 .contact-tile li a {
-  transform: all 0.5s ease-in;
-  color: #fff;
+  transform: color 0.5s ease-in;
+  color: #444;
 }
 
 .contact-tile li a:hover {
-  color: #193272;
+  color: #084bf5;
 }
 /* Footer */
 footer {
