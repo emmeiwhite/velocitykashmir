@@ -415,11 +415,6 @@ footer {
   }
 }
 
-/* WhatsApp Chat  */
-a[title="WhatsApp"] + div {
-  display: none !important;
-}
-
 /*=================================================
 ||				13. Chat Widget
 ==================================================*/
