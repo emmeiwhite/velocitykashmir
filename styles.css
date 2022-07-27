@@ -60,7 +60,7 @@ header {
     url("./img/hero-img.jpeg");
   background-position: center bottom;
   background-size: cover;
-  height: 70vh;
+  height: 80vh;
   background-repeat: no-repeat;
 }
 
@@ -69,7 +69,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #fff;
+  color: #e1dfdf;
   text-shadow: 0px 3px 7px #193272;
   position: relative;
 }
@@ -81,13 +81,13 @@ header {
 
 .main-heading--text h1 {
   font-size: 2.5rem;
-  font-weight: 900;
+  font-weight: 300;
 }
 
 .main-heading--text p {
   text-transform: capitalize;
   font-size: 1.625rem;
-  font-weight: 500;
+  font-weight: 100;
   margin-top: 0.6rem;
 }
 
@@ -274,6 +274,22 @@ header {
 .contact-tile li a:hover {
   color: #084bf5;
 }
+
+/* Google Maps */
+.find-google {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  align-items: center;
+}
+
+.find-google img,
+.find-google iframe {
+  max-width: 100%;
+}
+.find-google img {
+  cursor: pointer;
+}
 /* Footer */
 footer {
   background-color: #193272;
@@ -387,6 +403,16 @@ footer {
     width: 70%;
     display: inline-block;
   }
+
+  .find-google {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  .find-google img,
+  .find-google iframe {
+    width: 80%;
+  }
 }
 
 /* Small Mobile Screen*/
@@ -430,6 +456,11 @@ footer {
   }
   .contact-email {
     padding: 0.25rem 0.5rem;
+  }
+
+  .find-google img,
+  .find-google iframe {
+    width: 100%;
   }
 }
 
