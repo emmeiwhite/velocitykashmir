@@ -156,9 +156,17 @@ header {
 .about-wrapper {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  column-gap: 3rem;
+  column-gap: 6rem;
+  max-width: 100%;
 }
 
+.about-wrapper div {
+  width: 100%;
+}
+
+.about-wrapper div img {
+  width: 70%;
+}
 .about-text {
   text-align: justify;
 }
@@ -354,6 +362,23 @@ footer {
   .registration {
     margin-bottom: 0.75rem;
   }
+
+  .about-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .about-wrapper div {
+    width: 100%;
+    text-align: center;
+  }
+
+  .about-wrapper div:nth-child(2) {
+    order: -1;
+  }
+  .about-wrapper div img {
+    width: 70%;
+    display: inline-block;
+  }
 }
 
 /* Small Mobile Screen*/
@@ -406,6 +431,10 @@ footer {
   .logo-wrapper img {
     height: 41px;
     width: 41px;
+  }
+  .about-wrapper div img {
+    width: 90%;
+    display: inline-block;
   }
 }
 
